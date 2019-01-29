@@ -12,8 +12,11 @@ These projects will use different project types:
 - ASP.NET Core 2.x MVC
 - ASP.NET Core 2.x Razor Pages
 
-These projects will use different back ends and/or ORM layers:
+These projects will use different database back ends:
 - SQL Express on a Unix server
 - SQL Express LocalDB
-- SQLite
-- perhaps others (MySQL/Oracle/PostgreSQL/MongoDB)
+- perhaps others (SQLite / MySQL / Oracle / PostgreSQL / MongoDB)
+
+These projects will use different ORM layers:
+- Entity Framework
+- NHibernate
