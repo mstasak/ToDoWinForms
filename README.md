@@ -23,4 +23,4 @@ These projects will use different ORM layers:
 - raw DAO
 - Entity Framework 6 (Core? Fluent? Strongly configured? Annotations?  If EF has an issue, it is too many approaches make it impossible to say the "right way" to do something)
 - NHibernate
-- Notices some others in NuGet, might be worth trying them, partcularly those on the simple, lightweight side
+- Noticed some others in NuGet, might be worth trying them, partcularly those on the simple, lightweight side
