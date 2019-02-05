@@ -10,10 +10,12 @@ namespace ToDoWinForms
 {
     class ToDoContext : DbContext
     {
-        //public ToDoContext() : base()
-        //{
+        // we override convention with a specific database name, so migrations
+        // will not use an unindended db name 'ToDoWinForms.ToDoContext'
+        public ToDoContext() : base("ToDos")
+        {
 
-        //}
+        }
 
         public ToDoContext(string dbName) : base(dbName)
         {

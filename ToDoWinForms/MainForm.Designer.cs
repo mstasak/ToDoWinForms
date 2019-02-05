@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridViewToDo = new System.Windows.Forms.DataGridView();
-            this.buttonLoad = new System.Windows.Forms.Button();
-            this.buttonSave = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.buttonReset = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewToDo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewToDo
@@ -43,33 +43,17 @@
             this.dataGridViewToDo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewToDo.AutoGenerateColumns = false;
             this.dataGridViewToDo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewToDo.DataSource = this.bindingSource1;
             this.dataGridViewToDo.Location = new System.Drawing.Point(12, 36);
             this.dataGridViewToDo.Name = "dataGridViewToDo";
             this.dataGridViewToDo.Size = new System.Drawing.Size(776, 512);
             this.dataGridViewToDo.TabIndex = 1;
             // 
-            // buttonLoad
-            // 
-            this.buttonLoad.Location = new System.Drawing.Point(12, 555);
-            this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(75, 23);
-            this.buttonLoad.TabIndex = 2;
-            this.buttonLoad.Text = "Load";
-            this.buttonLoad.UseVisualStyleBackColor = true;
-            // 
-            // buttonSave
-            // 
-            this.buttonSave.Location = new System.Drawing.Point(94, 555);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(75, 23);
-            this.buttonSave.TabIndex = 3;
-            this.buttonSave.Text = "Save";
-            this.buttonSave.UseVisualStyleBackColor = true;
-            // 
             // buttonReset
             // 
-            this.buttonReset.Location = new System.Drawing.Point(176, 554);
+            this.buttonReset.Location = new System.Drawing.Point(12, 554);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(75, 23);
             this.buttonReset.TabIndex = 4;
@@ -92,13 +76,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 590);
             this.Controls.Add(this.buttonReset);
-            this.Controls.Add(this.buttonSave);
-            this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.dataGridViewToDo);
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
             this.Text = "To Do Winforms";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewToDo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,11 +92,10 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewToDo;
-        private System.Windows.Forms.Button buttonLoad;
-        private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
 
