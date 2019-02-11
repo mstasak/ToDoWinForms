@@ -1,7 +1,7 @@
 # ToDoWinForms
-ToDo Sample Project in C#, Windows Forms, EF, SQL Express LocalDB
+ToDo Sample Project in C# (VS 2017 CE), Windows Forms, EF 6.x, SQL Server 2016 LocalDB
 
-Fairly new, but it works.  This is a learning project, not a viable product - a realistic to do list would include categories, assignees, task priorities, due dates, difficulty estimates, auto-repeat schedules, snooze policies, auto-escalation of priority for overdue items, daily plan view, etc. etc. etc.
+Fairly new, but it works.  This is a learning project, not a viable product - a realistic to do list would include categories, assignees, task priorities, due dates, schedule modes like days of week, difficulty estimates, auto-repeat schedules, snooze policies, auto-escalation of priority for overdue items, daily plan view, history, daily performance scoring, holidays, etc. etc. etc.
 
 I'm planning to create a series of projects based on a simple single form (or close to it) daily task to-do list.
 
@@ -18,7 +18,7 @@ These projects will use different database back ends:
 - SQL Express LocalDB
 - SQLite
 - MySQL
-- perhaps others (Oracle[Express]? PostgreSQL? MongoDB? MariaDB? CounchDB? CockroachDB? ... simple XML file on a cloud file server?)
+- perhaps others (Oracle[Express]? PostgreSQL? MongoDB? MariaDB? CouchDB? CockroachDB? ... simple XML file on a cloud file server?)
 
 These projects will use different ORM layers:
 - raw DAO
