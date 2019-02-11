@@ -5,7 +5,7 @@ Fairly new, but it works.  This is a learning project, not a viable product - a 
 
 I'm planning to create a series of projects based on a simple single form (or close to it) daily task to-do list.
 
-The point of the project is to show in a limited amount of code different approaches to .NET data apps, and establish some starter baselines for more elaborate projects.
+The point of the project is to show in a limited amount of code different approaches to .NET data apps, and establish some starter baselines for more elaborate projects.  One reason for doing this is I tried to learn Entity Framework in a single big leap, while using it with a complex MySQL database and web services for talking to iOS apps.  This failed miserably, for numerous reasons including a wealth of examples targetting (and demanding!) unspecified product and tool versions, and failure to discover type mapping inconsistencies between MySQL and CLR types (I assume EF handles these well if the back end is SQL Server).  When convention failed, the resulting errors did not help me a bit to understand what was going wrong and how to fix via configuration!
 
 These projects will use different project types:
 - Windows Forms
@@ -18,7 +18,7 @@ These projects will use different database back ends:
 - SQL Express LocalDB
 - SQLite
 - MySQL
-- perhaps others (Oracle[Express]? PostgreSQL? MongoDB? MariaDB? CouchDB? CockroachDB? ... simple XML file on a cloud file server?)
+- perhaps others (Oracle[Express]? PostgreSQL? MongoDB? MariaDB? CouchDB? CockroachDB? Hadoop cluster?<g>... simple XML file on a cloud file server?)
 
 These projects will use different ORM layers:
 - raw DAO
