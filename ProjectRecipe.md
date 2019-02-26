@@ -7,6 +7,6 @@ Steps to build project from scratch
 - Create a class corresponding to each database table (see Entities\EntityName.cs classes in repository for examples)
 - Create a database context class (see ToDosContext.cs)
 - Edit the main form... Add controls, set up bindings
-- Create initial migration (this allows app to create database instance in SQL Server using EF Code First)
--- open NuGet console
--- enter ...
+- Create initial migration (this allows app to create database instance in SQL Server using EF Code First)... See https://docs.microsoft.com/en-us/ef/ef6/modeling/code-first/migrations/
+  - open NuGet Package Manager console
+  - enter 'Enable-Migrations'
