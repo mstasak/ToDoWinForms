@@ -11,3 +11,10 @@ Steps to build project from scratch
 - Create initial migration (this allows app to create database instance in SQL Server using EF Code First)... See https://docs.microsoft.com/en-us/ef/ef6/modeling/code-first/migrations/
   - open NuGet Package Manager console
   - enter 'Enable-Migrations'
+      PM> enable-migrations
+      Checking if the context targets an existing database...
+      Code First Migrations enabled for project Snips.
+  -
+  -
+-
+-
