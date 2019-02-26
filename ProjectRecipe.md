@@ -14,7 +14,9 @@ Steps to build project from scratch
       PM> enable-migrations
       Checking if the context targets an existing database...
       Code First Migrations enabled for project Snips.
-  -
+  - Having trouble making this work in another project.  May need additional code and or nuget commands to create database, create initial migration, apply initial migration.  When project is running, tried Ctx = new SnipsContext("Snippets");
+Ctx.Database.CreateIfNotExists(); - but this did not work.  Created database manually from VS SQL Server Object Explorer.  Then had to go to NuGet console and enter Add-Migration Initial and then Update-Database.
+
   -
 -
 -
