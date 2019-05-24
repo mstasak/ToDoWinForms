@@ -25,3 +25,6 @@ These projects will use different ORM layers:
 - Entity Framework 6 (Core? Fluent? Strongly configured? Annotations?  If EF has an issue, it is too many approaches make it impossible to say the "right way" to do something)
 - NHibernate
 - Noticed some others in NuGet, might be worth trying them, particularly those on the simple, lightweight, no-cost side
+
+
+Oh well, lost interest and moved on to an ASP.NET Core/EF Core/MSSQL/Angular web client project.  I'll leave this here as a minimal working example, but probably won't pursue any of the alternative back ends or app architectures.
