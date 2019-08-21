@@ -1,12 +1,9 @@
-namespace ToDoWinForms.Migrations
-{
+namespace ToDoWinForms.Migrations {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
-    {
-        public override void Up()
-        {
+    public partial class Initial : DbMigration {
+        public override void Up() {
             CreateTable(
                 "dbo.ToDoItems",
                 c => new
@@ -20,8 +17,7 @@ namespace ToDoWinForms.Migrations
             
         }
         
-        public override void Down()
-        {
+        public override void Down() {
             DropTable("dbo.ToDoItems");
         }
     }

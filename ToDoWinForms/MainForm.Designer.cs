@@ -44,6 +44,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewToDo.AutoGenerateColumns = false;
+            this.dataGridViewToDo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewToDo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewToDo.DataSource = this.bindingSource1;
             this.dataGridViewToDo.Location = new System.Drawing.Point(12, 36);
