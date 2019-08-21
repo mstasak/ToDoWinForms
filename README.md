@@ -1,5 +1,7 @@
 # ToDoWinForms
-ToDo Sample Project in C# (VS 2017 CE), Windows Forms, EF 6.x, SQL Server 2016 LocalDB
+(warning: this is probably a dead project)
+
+ToDo Learning Project in C# (VS 2017 CE), Windows Forms, EF 6.x, SQL Server 2016 LocalDB
 
 Fairly new, but it works.  This is a learning project, not a viable product - a realistic to do list would include categories, assignees, task priorities, due dates, schedule modes like days of week, difficulty estimates, auto-repeat schedules, snooze policies, auto-escalation of priority for overdue items, daily plan view, history, daily performance scoring, holidays, etc. etc. etc.
 
